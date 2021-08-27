@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'variables';
+@import 'scaffolding';
+
+#doggie-slider {
+  max-width: 281px;
+  margin: 0 auto;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+#doggie-slider .slide {
+  // height: 14rem;
+  /* flex: 1; */
+  /* max-width: initial; */
+  /* flex: 100%; */
+  /* width: 100%; */
+  min-width: 100%;
+  overflow: hidden;
+}
+
+#doggie-slider .slide .doggie-name {
+  position: relative;
+  font-size: 6rem;
+  // text-align: left;
+  line-height: 1;
+  transform-origin: 0 0 0;
+}
+
+#doggie-slider .slide > .header {
+  margin-bottom: -7rem;
+}
+
+#doggie-slider .slide > .doggie-animation {
+  // background: rgba(255, 0, 0, 0.74118);
+  // height: 7rem;
+  position: relative;
+  width: 12rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -3rem;
+}
+
+#doggie-slider .slide .doggie-needs-section {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+#doggie-slider .slide .doggie-needs-section .title {
+  font-size: 1rem;
+}
+
+#doggie-slider .slide .doggie-needs {
+  background: #fff;
+  height: 5rem;
+  border-radius: 1.2rem;
+}
+
+#arrows {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+#arrows .arrow {
+  cursor: pointer;
+  user-select: none;
+}
+
+/**********
+* SLIDES
+**********/
+#doggie-slider .slide:nth-child(1) {
+  background-color: #ffc2ad;
+}
+
+#doggie-slider .slide:nth-child(2) {
+  background-color: #abe3ea;
+}
+
+#doggie-slider .slide:nth-child(3) {
+  background-color: #f6dc33;
+}
+
+#slide-3d {
+  background-color: lime;
+}
+
+#slide-3d .doggie-animation {
+  height: 20rem;
+}
+
+/**********
+* RESPONSIVE
+**********/
+@media (min-width: 798px) {
+  #doggie-slider {
+    overflow: hidden;
+  }
+}
